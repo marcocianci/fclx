@@ -2,15 +2,22 @@ version: "3"
 
 services:
   app:
+    container_name: fclx_next_back
     build: .
     ports:
       - 3000:3000
     volumes:
       - .:/home/node/app
     extra_hosts:
-      - "host.docker.internal:172.17.0.1"
+      # - "host.docker.internal:172.17.0.1"
+      # marco.cianci
+      - "kubernets.docker.internal:host-gateway"
+      - "host.docker.internal:host-gateway"
+    command: npm run dev &
+
     # networks:
     #   - fcexperience
+    # 
 
   # db:
   #   image: mysql:8.0.30-debian

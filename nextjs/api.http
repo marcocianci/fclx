@@ -5,14 +5,15 @@ POST http://localhost:3000/api/chats
 Content-Type: application/json
 
 {
-  "message": "Hello World"
+  "message": "Como iniciar uma aplicação Next JS?"
 }
 
 ###
 GET http://localhost:3000/api/chats
 
 ###
-@chatId = b1a23a46-f7f6-4c45-8435-f9173a1b525f
+//@chatId = b1a23a46-f7f6-4c45-8435-f9173a1b525f
+@chatId = 79ddec4e-65ed-4389-9135-6a60b361a05d
 
 GET http://localhost:3000/api/chats/{{chatId}}/messages
 
@@ -21,9 +22,22 @@ POST http://localhost:3000/api/chats/{{chatId}}/messages
 Content-Type: application/json
 
 {
-  "message": "Estou testando a API 2222"
+  "message": "Como iniciar uma aplicação Next JS?"
 }
 
 ###
-@messageId = d56cf557-17b5-4a9f-ac58-1f0be4bccbe3
+@messageId = 2b6d9a01-2462-48dc-a2e5-5b1257581d04
+// fe19bc58-618c-4504-a669-e04cf86af0fe
 GET http://localhost:3000/api/messages/{{messageId}}/events
+
+
+  # "id": "79ddec4e-65ed-4389-9135-6a60b361a05d",
+  # "messages": [
+  #   {
+  #     "id": "4e9a690d-4769-4a2b-b076-c44ab8e29b86",
+  #     "chat_id": "79ddec4e-65ed-4389-9135-6a60b361a05d",
+  #     "content": "Como iniciar uma aplicação Next JS?",
+
+# "id": "15f46be6-c404-48a2-89cf-9e322abd0ed5",
+# "chat_id": "2b6d9a01-2462-48dc-a2e5-5b1257581d04",
+# "content": "Como iniciar uma aplicação Next JS?",
