@@ -24,4 +24,8 @@ npm install ts-node --save-dev
 npm install -g next
 next build
 next start
+
+
+npm i @types/marked --save-dev
+
 ```
