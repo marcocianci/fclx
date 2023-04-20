@@ -12,13 +12,13 @@ services:
     # networks:
     #   - fcexperience
 
-  db:
-    image: mysql:8.0.30-debian
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=chat
-    volumes:
-      - .docker/dbdata:/var/lib/mysql
+  # db:
+  #   image: mysql:8.0.30-debian
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=root
+  #     - MYSQL_DATABASE=chat
+  #   volumes:
+  #     - .docker/dbdata:/var/lib/mysql
     # networks:
     #   - fcexperience
 

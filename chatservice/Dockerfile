@@ -18,14 +18,16 @@ COPY . .
 RUN cd /go/pkg/mod/github.com/j178/tiktoken-go@v0.2.1/tiktoken-cffi && \
     cargo build --release
 
-RUN apt update && apt install -y protobuf-compiler && apt install -y protoc-gen-go
-RUN go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+
+RUN apt update
+RUN apt install -y protobuf-compiler
+
+# marco.cianci (rodar o main.go em background)
+# RUN go run cmd/chatservice/main.go &
 
 CMD [ "tail", "-f", "/dev/null" ]
 
 
-# marco.cianci (rodar o main.go em background)
-# -- RUN go run cmd/chatservice/main.go &
-# CMD ["go", "run", "cmd/chatservice/main.go", "&"]
+# RUN apt update && apt install -y protobuf-compiler && apt install -y protoc-gen-go
+# RUN go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 
-# CMD [ "tail", "-f", "/dev/null" ]
