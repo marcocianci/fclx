@@ -1,9 +1,12 @@
+### 17 / 04 / 2023
+
 https://github.com/devfullcycle/fclx
 
 https://fcexperience.fullcycle.com.br/aulas/
 
 # aula 01 :: Docker e Containers e Microsserviço do ChatGPT
 https://youtu.be/UugkE-OeE4E
+
 # fclx
 FC LX - Docker e Containers e Microsserviço do ChatGPT | https://www.youtube.com/watch?v=UugkE-OeE4E&amp;ab_channel=FullCycle
 
