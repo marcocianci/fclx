@@ -3,6 +3,20 @@ CREATE SCHEMA `chat` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
 
 
 
+
+
+Config Auth
+58:00
+(resetar o banco pra receber novas colunas)
+npx prisma migrate reset
+01:06:19
+apagar pasta  ./prisma/migrations
+
+
+#### #### #### #### 
+#### READ ME #### 
+#### #### #### #### 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

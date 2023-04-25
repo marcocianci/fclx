@@ -30,6 +30,7 @@ services:
      #   - fcexperience
   
   keycloak:
+    container_name: fclx_keycloak
     image: quay.io/keycloak/keycloak:21.0
     command: start-dev
     ports:
